@@ -6,6 +6,16 @@
 
 
 }
+.odd{
+    font-weight: 100;
+}
+.even{
+    font-weight: bold;
+}
+.logofont{
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
 body{
 color:var(--dark-color);
 }
@@ -53,6 +63,8 @@ code[class*="language-"],
     word-break: break-all;
     word-wrap: break-word;
 }
+
+
 
 
 main>.container {

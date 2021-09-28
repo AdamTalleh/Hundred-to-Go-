@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>APP Name:A coding project by Adam Talleh</title>
+    <title>Hundred To Go:A coding project by Adam Talleh</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,6 +13,10 @@
         <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
         <link href="css/site.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="img/android-chrome-192x192.png">
+                 <!--google font link-->
+                 <link rel="preconnect" href="https://fonts.googleapis.com">
+                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                 <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap" rel="stylesheet">
    <!-- Convert this to an external style sheet -->
    
 </head>
@@ -22,7 +26,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/logo.png"class="d-inline-block align-text-top" width="100" > Intelligent Tool</a>
+        <a class="navbar-brand logofont" href="#"><img src="img/logo.png"class="d-inline-block align-text-top" width="100" > Hundred To Go</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,7 +54,57 @@
 </nav>
 <!-- ==Main section=====-->
 <main class="flex-shrink-0">
-    <div class="container">
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col col-lg-4 border-end border-4">
+                <h1>Hundred To Go : A coding project</h1>
+                <h4 class="lead">
+                    Live life one loop at a time. a javascript exercise using loops.Write a program that displays the numbers from 0 to 100 .Display the even numbers in <strong>Bold</strong>
+
+                </h4>
+                <h2 class="mt-5 border-bottom border-2">Instructions</h2>
+                <p>Enter a starting value and an ending value.Press the button and the values will appear</p>
+
+
+            </div>
+            <div class="col col-lg-8">
+                <div>
+                    <h5>Enter Values</h5>
+                    <form class="row gy-2 gx-3">
+                        <div class="col">
+                            <input id="startValue" type="number" class="form-control" placeholder="Start Value" Value=0 min=0
+                            aria-label="Start Value">
+                          
+                        </div>
+                        <div class="col">
+                            <input id="endValue" type="number" class="form-control" placeholder="End Value" Value=100 max=100
+                            aria-label="End Value">
+
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                            <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Go Ahead</button>
+
+                        </div>
+
+                    </form>
+                    <h2 class="mt-5 border-bottom border-2">Results</h2>
+                    <div class="table-responsive">
+                        <table class="table table-stripped table-sm">
+                            <tbody id="results">
+                                <!--Results go here-->
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            
 
     </div>
 </main>
@@ -84,5 +138,7 @@
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
 </script>
 <script src="js/site.js"></script>
+<script>document.getElementById("btnSubmit").addEventListener("click",getValues);
+</script>
 </body>
 </html>
